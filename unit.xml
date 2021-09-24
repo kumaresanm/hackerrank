@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 90.0.4430 (Windows 10.0.0)" package="unit" timestamp="2021-05-17T12:28:38" id="0" hostname="IN46TAAL06167H" tests="5" errors="0" failures="0" time="0.088">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/90.0.4430.212 Safari/537.36"/>
+  </properties>
+  <testcase name="TemperatureConverter Typing value in Fahrenheit field gets correct Celsius value upto 1 decimal values" time="0.05" classname=".TemperatureConverter"/>
+  <testcase name="TemperatureConverter Typing value in Fahrenheit field gets correct Celsius value" time="0.009" classname=".TemperatureConverter"/>
+  <testcase name="TemperatureConverter Typing value in Celsius field gets correct Fahrenheit value upto 1 decimal values" time="0.009" classname=".TemperatureConverter"/>
+  <testcase name="TemperatureConverter Perform series of actions" time="0.011" classname=".TemperatureConverter"/>
+  <testcase name="TemperatureConverter Typing value in Celsius field gets correct Fahrenheit value" time="0.009" classname=".TemperatureConverter"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

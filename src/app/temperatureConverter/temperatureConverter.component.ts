@@ -6,14 +6,16 @@ import { Component } from "@angular/core";
   styleUrls: ["./temperatureConverter.component.scss"],
 })
 export class TemperatureConverter {
-  farentVal: number;
-  celVal: number;
+  farentVal: string;
+  celVal: string;
 
   convertCel($event) {
-    this.farentVal = $event * 9 / 5 + 32;
+    this.celVal = $event;
+    this.farentVal =($event * 9 / 5 + 32).toFixed(1);
   }
 
   convertFar($event) {
-    this.celVal = ($event - 32) * 5 / 9;
+    this.farentVal = $event;
+    this.celVal = (($event - 32) * 5 / 9).toFixed(1);
   }
 }

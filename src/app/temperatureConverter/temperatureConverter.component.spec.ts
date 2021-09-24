@@ -13,7 +13,7 @@ describe('TemperatureConverter', () => {
 
   const pushCelsiusValue = async (value) => {
     celsiusInput.value = value;
-    celsiusInput.dispatchEvent(new Event('keyup'));
+    celsiusInput.dispatchEvent(new Event('change'));
     celsiusInput.dispatchEvent(new Event('input'));
     await fixture.whenStable();
     await fixture.detectChanges();
@@ -21,7 +21,7 @@ describe('TemperatureConverter', () => {
 
   const pushFahrenheitValue = async (value) => {
     fahrenheitInput.value = value;
-    fahrenheitInput.dispatchEvent(new Event('keyup'));
+    fahrenheitInput.dispatchEvent(new Event('change'));
     fahrenheitInput.dispatchEvent(new Event('input'));
     await fixture.whenStable();
     await fixture.detectChanges();
